@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_learning/counter_provider.dart';
+import 'package:provider_learning/example.dart';
+import 'package:provider_learning/example_provider.dart';
 import 'package:provider_learning/state_ful.dart';
 import 'package:provider_learning/state_les.dart';
 import 'package:provider_learning/subscribe.dart';
@@ -15,10 +17,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: ChangeNotifierProvider(
-        create: (_)=> CounterProvider(),
+
+      home: MultiProvider(
+        providers: [
+        
+         ChangeNotifierProvider(create: (_)=>CounterProvider()),
+          ChangeNotifierProvider(create: (_)=>ExampleProvider())
+        ],
+
         child: MaterialApp(
-          home: Subscribe(),
+          home: Example(),
         ),
       ),
     );
