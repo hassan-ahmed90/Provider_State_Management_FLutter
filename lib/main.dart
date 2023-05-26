@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_learning/counter_provider.dart';
-import 'package:provider_learning/example.dart';
-import 'package:provider_learning/example_provider.dart';
-import 'package:provider_learning/fav_provider.dart';
-import 'package:provider_learning/fav_screen.dart';
+import 'package:provider_learning/Counter_App/counter_provider.dart';
+import 'package:provider_learning/Example_App/example.dart';
+import 'package:provider_learning/Example_App/example_provider.dart';
+import 'package:provider_learning/Favourate_app/fav_provider.dart';
+import 'package:provider_learning/Favourate_app/fav_screen.dart';
 import 'package:provider_learning/state_ful.dart';
 import 'package:provider_learning/state_les.dart';
-import 'package:provider_learning/subscribe.dart';
+import 'package:provider_learning/Counter_App/subscribe.dart';
 import 'package:provider_learning/why_provider.dart';
 
 void main() {

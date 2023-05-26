@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_learning/counter_provider.dart';
+import 'package:provider_learning/Counter_App/counter_provider.dart';
 class Subscribe extends StatefulWidget {
   const Subscribe({Key? key}) : super(key: key);
 
