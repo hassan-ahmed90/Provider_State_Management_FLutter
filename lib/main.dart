@@ -7,6 +7,9 @@ import 'package:provider_learning/Favourate_app/fav_provider.dart';
 import 'package:provider_learning/Favourate_app/fav_screen.dart';
 import 'package:provider_learning/Light_Dark_Mode/theme_provider.dart';
 import 'package:provider_learning/Light_Dark_Mode/theme_screen.dart';
+import 'package:provider_learning/Login_with_API/Login_screen.dart';
+import 'package:provider_learning/Login_with_API/auth_provider.dart';
+import 'package:provider_learning/notify_listner.dart';
 import 'package:provider_learning/state_ful.dart';
 import 'package:provider_learning/state_les.dart';
 import 'package:provider_learning/Counter_App/subscribe.dart';
@@ -28,7 +31,8 @@ class MyApp extends StatelessWidget {
          ChangeNotifierProvider(create: (_)=>CounterProvider()),
           ChangeNotifierProvider(create: (_)=>ExampleProvider()),
           ChangeNotifierProvider(create: (_)=>FavProvider()),
-          ChangeNotifierProvider(create: (_)=>ThemeProvider())
+          ChangeNotifierProvider(create: (_)=>ThemeProvider()),
+          ChangeNotifierProvider(create: (_)=>AuthProvider()),
         ],
 
         child: Builder(
@@ -44,7 +48,7 @@ class MyApp extends StatelessWidget {
               darkTheme: ThemeData(
                 brightness: Brightness.dark
               ),
-              home: ThemeScreen(),
+              home: LoginScreen(),
             );
           },
 
