@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:provider_learning/counter_provider.dart';
 import 'package:provider_learning/example.dart';
 import 'package:provider_learning/example_provider.dart';
+import 'package:provider_learning/fav_provider.dart';
+import 'package:provider_learning/fav_screen.dart';
 import 'package:provider_learning/state_ful.dart';
 import 'package:provider_learning/state_les.dart';
 import 'package:provider_learning/subscribe.dart';
@@ -22,11 +24,12 @@ class MyApp extends StatelessWidget {
         providers: [
         
          ChangeNotifierProvider(create: (_)=>CounterProvider()),
-          ChangeNotifierProvider(create: (_)=>ExampleProvider())
+          ChangeNotifierProvider(create: (_)=>ExampleProvider()),
+          ChangeNotifierProvider(create: (_)=>FavProvider()),
         ],
 
         child: MaterialApp(
-          home: Example(),
+          home: FavourateScreen(),
         ),
       ),
     );
