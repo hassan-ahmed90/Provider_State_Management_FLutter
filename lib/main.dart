@@ -9,6 +9,7 @@ import 'package:provider_learning/Light_Dark_Mode/theme_provider.dart';
 import 'package:provider_learning/Light_Dark_Mode/theme_screen.dart';
 import 'package:provider_learning/Login_with_API/Login_screen.dart';
 import 'package:provider_learning/Login_with_API/auth_provider.dart';
+import 'package:provider_learning/all_in_one.dart';
 import 'package:provider_learning/notify_listner.dart';
 import 'package:provider_learning/state_ful.dart';
 import 'package:provider_learning/state_les.dart';
@@ -48,7 +49,7 @@ class MyApp extends StatelessWidget {
               darkTheme: ThemeData(
                 brightness: Brightness.dark
               ),
-              home: LoginScreen(),
+              home: AllSceens(),
             );
           },
 
